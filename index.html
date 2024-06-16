@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Fotos y Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-container">
+            <img src="img/1.jpg" class="carousel-item" alt="Foto 1">
+            <img src="img/2.jpg" class="carousel-item" alt="Foto 2">
+            <img src="img/3.jpg" class="carousel-item" alt="Foto 3">
+            <img src="img/4.jpg" class="carousel-item" alt="Foto 4">
+            <img src="img/5.jpg" class="carousel-item" alt="Foto 5">
+            <video class="carousel-item">
+                <source src="img/IMG_5576.MP4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+        <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
